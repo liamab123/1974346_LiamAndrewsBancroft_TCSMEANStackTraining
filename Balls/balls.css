@@ -1,0 +1,81 @@
+#b1{
+    height : 40px;
+    width : 40px;
+    border-radius:20px;
+    background-color: red;
+    color:red;
+    float:left;
+    position : absolute;
+    animation-name : a1;
+    animation-duration : 7s;
+    animation-iteration-count:infinite; 
+}
+#b2{
+    color: green;
+    height : 40px;
+    width : 40px;
+    border-radius:20px;
+    background-color:green;
+    float:right;
+    position : absolute;
+    animation-name : a2;
+    animation-duration : 7s;
+    animation-iteration-count:infinite; 
+}
+#b3{color:yellow;
+    height : 40px;
+    width : 40px;
+    border-radius:20px;
+    background-color : yellow;
+    float:left;
+    position : absolute;
+    animation-name : a3;
+    animation-duration : 7s;
+    animation-iteration-count:infinite; 
+}
+#b4{color:blue;
+    height : 40px;
+    width : 40px;
+    border-radius:20px;
+    background-color : blue;
+    float:right;
+    position : absolute;
+    animation-name : a4;
+    animation-duration : 7s;
+    animation-iteration-count:infinite; 
+}
+
+@keyframes a1{
+0% {margin : 0px 0px}
+45%{background-color: red;}
+50%{background-color: white; 
+margin : 300px 300px}
+55%{background-color: blue;}
+100%{background-color: blue;}
+
+}
+@keyframes a2{
+    0% {margin :0px 600px}
+    45%{background-color: green;}
+    50%{background-color: white;
+    margin : 300px 300px}
+    55%{background-color: yellow;}
+    100%{background-color: yellow;
+    margin : 0px 600px}
+}
+@keyframes a3{
+    0% {margin: 600px 0px}
+    45%{background-color: yellow;}
+    50%{background-color: white;
+        margin : 300px 300px}
+    55%{background-color: green;}
+    100%{background-color: green;margin: 600px 0px}
+}
+@keyframes a4{
+    0% {margin : 600px 600px}
+45%{background-color: blue;}
+50%{background-color: white;
+    margin : 300px 300px}
+55%{background-color: red;}
+100%{background-color: red;margin: 600px 600px}
+}

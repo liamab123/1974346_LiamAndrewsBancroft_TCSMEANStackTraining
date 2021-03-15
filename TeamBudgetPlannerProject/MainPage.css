@@ -1,0 +1,17 @@
+body{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+h1{
+    background-color: cadetblue;
+    width : 380px;
+    padding : 10px;
+    border-radius:20px;
+
+}
+nav{
+    font-size : larger;
+    background-color: aliceblue;
+    width : 300px;
+}

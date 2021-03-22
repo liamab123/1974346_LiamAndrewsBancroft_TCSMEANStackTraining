@@ -1,0 +1,21 @@
+h1{
+    margin-top:10px;
+}
+body{
+    background-color: aliceblue;
+}
+.tablehead{
+    font-size: larger;
+    font-weight:bold;
+}
+#totalLabel{
+    font-size:larger;
+    font-weight:bold;
+}
+#cartTable{
+    border-style:solid;
+    border-radius:5px;
+    padding:10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}

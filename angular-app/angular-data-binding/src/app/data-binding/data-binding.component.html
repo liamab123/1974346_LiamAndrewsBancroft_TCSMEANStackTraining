@@ -1,0 +1,5 @@
+<p>data-binding works!</p>
+{{fname}}
+Last  name is <input type = "button" [value] = "lname" (click) = "changeName()"/>
+Skillset : <input type = "text" #skill/>
+<input type = "button" value = "add skill" (click) = "addSkill(skill.value)"/>

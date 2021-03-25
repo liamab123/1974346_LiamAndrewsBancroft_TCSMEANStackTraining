@@ -3,12 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {ChildComponent} from './child.component';
-import{Child1} from './child1.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ChildComponent,Child1
+    AppComponent,
+    AboutusComponent,
+    ContactusComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

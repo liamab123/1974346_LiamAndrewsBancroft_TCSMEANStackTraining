@@ -1,0 +1,17 @@
+<div>
+    <h2>Signup</h2>
+    <hr>
+<form [formGroup] = "signupRef" (ngSubmit) = "createAccount()" class = "form-group">
+    <label>First Name: </label>
+    <input type = "text" formControlName = "firstName" class = "form-control"/> <br/>
+    <label>Last Name: </label>
+    <input type = "text" formControlName = "lastName" class = "form-control"/><br/>
+    <label>User Name: </label>
+    <input type = "text" formControlName = "user" class = "form-control"/><br/>
+    <label>Password: </label>
+    <input type = "password" formControlName = "pass" class = "form-control"/><br/>
+    <hr>
+    <input type = "submit" class = "btn btn-primary" value = "Create Account"/>
+    <input type = "button" class = "btn btn-primary" value = "Reset" (click) = "formReset()"/>
+</form>
+</div>

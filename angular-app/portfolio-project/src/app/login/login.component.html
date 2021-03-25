@@ -1,0 +1,12 @@
+<div>
+    <h2>Login</h2>
+<form [formGroup] = "loginRef" (ngSubmit) = "logIn()" class = "form-group">
+    <label>User Name: </label>
+    <input type = "text" formControlName = "user" class = "form-control"/><br/>
+    <label>Password: </label>
+    <input type = "password" formControlName = "pass" class = "form-control"/><br/>
+    <input type = "submit" value = "Log In"/>
+</form>
+{{msg}} <br/>
+<input type = "button" class = "btn btn-primary" (click) = "goToSignUp()" value = "Sign Up"/>
+</div>

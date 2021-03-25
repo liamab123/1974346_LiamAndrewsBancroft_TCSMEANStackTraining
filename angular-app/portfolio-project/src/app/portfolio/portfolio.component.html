@@ -1,0 +1,26 @@
+<div>
+    <h2>My Portfolio</h2>
+    <h4>Welcome <span id = "username">{{username}}</span></h4>
+    <div class = "form-group">
+    <form [formGroup] = "tableRef" (ngSubmit) = "addToTable()" >
+        <label>Contact Name</label>
+        <input type = "text" formControlName = "name" class = "form-control"/><br/>
+        <label>Phone Number</label> 
+        <input type = "text" formControlName = "phoneNumber" class = "form-control"><br/>
+        <input type = "submit" value = "Save"/>
+    </form>
+    </div>
+    <hr>
+    <table class = "table">
+        <tr>
+            <th >Name</th>
+            <th >Phone Number</th>
+        </tr>
+       <tbody *ngFor = "let con of contacts" class = "table table-bordered">
+        <tr>
+            <td>{{con.name}}</td>
+            <td>{{con.phoneNumber}}</td>
+        </tr>
+       </tbody> 
+    </table>
+</div>

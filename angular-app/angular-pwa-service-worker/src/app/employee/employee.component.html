@@ -1,0 +1,16 @@
+<div>
+    <h2>Add Employee Details</h2>
+    <form #emRef = "ngForm" (ngSubmit) = "storeUser(empRef.value)">
+        <mat-form-field>
+            <mat-label>ID:</mat-label>
+            <input matInput type = "text" name = "id" ngModel/>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Name:</mat-label>
+            <input matInput type = "text" name = "name" ngModel/>
+        </mat-form-field>
+        <br>
+        <button mat-stroked-button color = "primary" style = "background-color: aqua;">Store</button>
+    </form>
+</div>

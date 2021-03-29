@@ -1,0 +1,12 @@
+<div>
+     <form  [formGroup] = "qRef" (ngSubmit) = "testSubmit()">
+         <div *ngFor = "let q of questions" >
+        <label>{{q.question}}</label>
+        <div  *ngFor = "let a of q.answers">
+            <label>{{a}}</label>
+            <input type = "checkbox" formControlName = "selectedAnswer"/>
+        </div> 
+    </div>
+    <input type = "submit"/>
+     </form>
+</div>

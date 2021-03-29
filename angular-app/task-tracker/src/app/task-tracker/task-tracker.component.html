@@ -1,0 +1,47 @@
+<h1>Task Tracking</h1>
+<mat-grid-list cols = "2" rowHeight = "2.2:1.2">
+<mat-grid-tile>
+        <form #taskRef = "ngForm" (ngSubmit) = "storeTask(taskRef.value)">
+            Add Task <br>
+        <mat-form-field appearance = "outline">
+            <mat-label>ID:</mat-label>
+            <input matInput type = "text" name = "ID" ngModel/>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance = "outline">
+            <mat-label>Name:</mat-label>
+            <input matInput type = "text" name = "name" ngModel/>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance = "outline">
+            <mat-label>Task:</mat-label>
+            <input matInput type = "text" name = "task" ngModel/>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance = "outline">
+            <mat-label>Due Date:</mat-label>
+            <input matInput type = "date" name = "date" ngModel/>
+        </mat-form-field>
+        <br>
+        <button mat-stroked-button color = "primary" style = "background-color: aqua;">Add Task</button>
+    </form>
+</mat-grid-tile>
+<mat-grid-tile>
+    <table mat-table>
+        <tr mat-header-row>
+        <th>ID: </th>
+        <th>Name: </th>
+        <th>Task</th>
+        <th>Due Date</th>
+    </tr>
+    <tbody *ngFor = "let t of tasks">
+        <tr>
+            <td>{{t.ID}}</td>
+            <td>{{t.name}}</td>
+            <td>{{t.task}}</td>
+            <td>{{t.date}}</td>
+        </tr>
+       </tbody> 
+       </table>
+    </mat-grid-tile>
+</mat-grid-list>

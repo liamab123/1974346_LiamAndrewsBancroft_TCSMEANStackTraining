@@ -1,0 +1,20 @@
+h1{
+    padding-left: 20px;
+    margin-top:50px;
+}
+#page{
+    background-color: rgb(252, 248, 232);
+}
+#results{
+    background-color: rgb(200, 212, 236);
+    padding:10px;
+    border-radius:10px;
+    border-style:solid;
+}
+#test{
+    border-style:solid;
+    border-radius:10px;
+    padding:20px;
+    background-color: rgb(217, 255, 255);
+    margin-bottom:20px;
+}

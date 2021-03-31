@@ -1,12 +1,32 @@
-<div>
-     <form  [formGroup] = "qRef" (ngSubmit) = "testSubmit()">
-         <div *ngFor = "let q of questions" >
-        <label>{{q.question}}</label>
-        <div  *ngFor = "let a of q.answers">
-            <label>{{a}}</label>
-            <input type = "checkbox" formControlName = "selectedAnswer"/>
-        </div> 
-    </div>
-    <input type = "submit"/>
+<div  class = "container-fluid" id = "page">
+<h1>How Well Do You Know Your Animal Sizes?</h1>
+<div class = "container">
+    <div class = "row">
+        <div class = "col" id = "test">
+     <form  #testRef = "ngForm" (ngSubmit) = "testSubmit(testRef.value)">
+         <ol>
+         <li *ngFor = "let q of questions" name = "q.question">
+        <label >{{q.question}}</label>
+        <ul *ngFor = "let a of q.answers">
+        <li>
+            <label class = "form-check=label">{{a.option}}</label>
+            <input type = "checkbox" [(ngModel)] = "a.selected" name = "{{a.option}}" class = "form-check-input"/>
+        </li>
+    </ul>
+</ol>
+    <input type = "submit" class = "btn btn-primary"/>
      </form>
+    </div>
+     <div class = "col">
+        <div *ngIf = "done" id ="results">
+         <h2>Results</h2>
+         <div *ngFor = "let s of correctAndUser">
+             {{s}}
+         </div>
+             <span *ngIf = "pass" style = "color: green"> Number Correct: {{numCorrect}} <br>You Pass</span>
+             <span *ngIf = "!pass" style = "color: red">Number Correct: {{numCorrect}} <br> You Have Failed. <a href = "http://localhost:4200/" class = "btn btn-primary"> Try Again </a></span>
+         </div>
+     </div>
+     </div>
+</div>
 </div>

@@ -1,9 +1,74 @@
 [{"question": "What is the largest species of bear?",
-    "answers":["Black Bear","Grizzly Bear", "Polar Bear","Panda Bear"], 
-    "answerIndex":3},
-    {"question": "What is the largest species of bear?",
-        "answers":["Black Bear","Grizzly Bear", "Polar Bear","Panda Bear"], 
-        "answerIndex":3}
+    "answers":[{"option":"Black Bear","isAnswer":false,"selected":false},
+        {"option":"Grizzly","isAnswer":false,"selected":false},
+        {"option":"Polar Bear","isAnswer":true,"selected":false},
+        {"option":"Panda","isAnswer":false,"selected":false}
+    ], 
+    "answerIndex":2,"correct":false},
+    {"question": "What is the largest species of rodent?",
+        "answers":[{"option":"Capybara","isAnswer":true,"selected":false},
+            {"option":"Mouse","isAnswer":false,"selected":false},
+            {"option":"Guinea Pig","isAnswer":false,"selected":false},
+            {"option":"Rat","isAnswer":false,"selected":false}
+        ], 
+        "answerIndex":0,"correct":false},
+        {"question": "What is the largest species of bird?",
+            "answers":[{"option":"Peacock","isAnswer":false,"selected":false},
+                {"option":"Ostrich","isAnswer":true,"selected":false},
+                {"option":"Sparrow","isAnswer":false,"selected":false},
+                {"option":"Albatross","isAnswer":false,"selected":false}
+            ], 
+            "answerIndex":1,"correct":false},
+            {"question": "What is the largest species of fish?",
+                "answers":[{"option":"Whale Shark","isAnswer":true,"selected":false},
+                    {"option":"Salmon","isAnswer":false,"selected":false},
+                    {"option":"Trout","isAnswer":false,"selected":false},
+                    {"option":"Cod","isAnswer":false,"selected":false}
+                ], 
+                "answerIndex":0,"correct":false},
+        {"question": "What is the largest breed of dog?",
+                    "answers":[{"option":"Chihuahua","isAnswer":false,"selected":false},
+                        {"option":"Golden Retriever","isAnswer":false,"selected":false},
+                        {"option":"Lab","isAnswer":false,"selected":false},
+                        {"option":"Great Dane","isAnswer":true,"selected":false}
+                    ], 
+                    "answerIndex":3,"correct":false},
+                {"question": "What is the largest species of cat?",
+                        "answers":[{"option":"Lion","isAnswer":false,"selected":false},
+                            {"option":"Hyena","isAnswer":false,"selected":false},
+                            {"option":"Tiger","isAnswer":true,"selected":false},
+                            {"option":"Puma","isAnswer":false,"selected":false}
+                        ], 
+                        "answerIndex":2,"correct":false},  
+                        {"question": "What is the largest species of mammal?",
+                            "answers":[{"option":"Human","isAnswer":false,"selected":false},
+                                {"option":"Blue Whale","isAnswer":true,"selected":false},
+                                {"option":"Elephant","isAnswer":false,"selected":false},
+                                {"option":"Dog","isAnswer":false,"selected":false}
+                            ], 
+                            "answerIndex":1,"correct":false},   
+                            {"question": "What is the largest species of insect?",
+                                "answers":[{"option":"Mosquito","isAnswer":false,"selected":false},
+                                    {"option":"Fly","isAnswer":false,"selected":false},
+                                    {"option":"Beatle","isAnswer":false,"selected":false},
+                                    {"option":"Weta","isAnswer":true,"selected":false}
+                                ], 
+                                "answerIndex":3,"correct":false},
+                                {"question": "What is the largest species of reptile?",
+                                    "answers":[{"option":"Crocodile","isAnswer":true,"selected":false},
+                                        {"option":"Python","isAnswer":false,"selected":false},
+                                        {"option":"Snapping Turtle","isAnswer":false,"selected":false},
+                                        {"option":"Kimodo Dragon","isAnswer":false,"selected":false}
+                                    ], 
+                                    "answerIndex":0,"correct":false},
+                                    {"question": "What is the largest species of amphibian?",
+                                        "answers":[{"option":"Bull Frog","isAnswer":false,"selected":false},
+                                            {"option":"Giant Salamander","isAnswer":true,"selected":false},
+                                            {"option":"Newt","isAnswer":false,"selected":false},
+                                            {"option":"Toad","isAnswer":false,"selected":false}
+                                        ], 
+                                        "answerIndex":1,"correct":false}
 
-]
+                
+    ]
 
